@@ -69,6 +69,78 @@ header {
     color: white;
 }
 
+/* Tablet View (768px and below) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+
+    .sidebar.active .nav-links {
+        display: flex;
+    }
+}
+
+/* Mobile View (600px and below) */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+}
+
+/* Small Mobile View (400px and below) */
+@media screen and (max-width: 400px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        font-size: 26px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+
 /* Sidebar Navigation */
 .sidebar {
     position: fixed;
@@ -115,6 +187,57 @@ header {
 .sidebar.open {
     right: 0;
 }
+
+/* Mission & Vision Section */
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.mission, .vision {
+    width: 48%; /* Adjusting for responsiveness */
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.mission h2, .vision h2 {
+    font-size: 2rem;
+    color: #ff4500;
+    margin-bottom: 15px;
+}
+
+.mission h3, .vision h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.mission p, .vision p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .mission-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission, .vision {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -295,55 +418,6 @@ header {
 .appointment-form button:hover {
     background-color: #45a049;  /* Darker green on hover */
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-    .appointment-btn {
-        width: 90%;
-        font-size: 16px;
-        padding: 12px 20px;
-    }
-}
-        /* About Us Section */
-        .about-us {
-            padding: 40px 20px;
-            background-color: #f9f9f9;
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
-        }
-
-        .about-us h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .about-us p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        /* Mission and Vision Section */
-        .mission-vision {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
-        .mission, .vision {
-            padding: 20px;
-            background-color: rgb(74, 173, 235);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .mission h3, .vision h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .mission p, .vision p {
-            font-size: 16px;
-        }
 
 /* Impact Section Styling */
         .impact {
