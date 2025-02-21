@@ -527,11 +527,13 @@ header {
 .impact-stat h3 {
     margin: 0;
     font-size: 16px;
+    text-align: center;
 }
 
 .impact-stat p {
     margin: 5px 0 0;
     font-size: 20px;
+    text-align: center;
 }
 
 /* ✅ FIXED MEDIA QUERIES */
@@ -581,6 +583,14 @@ header {
     .impact-box {
         width: 100%;
         max-width: 450px;
+    }
+    .impact-stats{
+        flex-direction: column;
+        padding-left: 130px;
+        padding-right: 130px;
+        align-content: center;
+        align-self: center;
+        align-items: center;
     }
 }
 
