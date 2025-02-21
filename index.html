@@ -8,33 +8,27 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <h1><span>Gyne</span>care</h1>
-        </div>
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Our Services</a>
-            <a href="#">Blogs</a>
-            <a href="#">Doctors</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="hamburger" onclick="toggleMenu()">
-            ☰
-        </div>
-    </header>
-
-    <!-- Sidebar Navigation -->
-    <div class="sidebar" id="sidebar">
-        <button class="close-btn" onclick="toggleMenu()">×</button>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#"> Our Services</a>
-        <a href="#">Blogs</a>
-        <a href="#">Doctors</a>
-        <a href="#">Contact</a>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <h1><span>Gyne</span>care</h1>
     </div>
+    <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger" id="menu-toggle">
+        ☰
+    </div>
+</header>
+
+
 
     <!-- Hero Section -->
 <section class="hero">
@@ -42,13 +36,16 @@
         <h1>Expert <span class="highlight">Gynecological Care</span> 24/7</h1>
         <p>Providing compassionate and professional care for women at every stage of life.</p>
     </div>
-    <img src="./care.jpg" alt="Hero Image">
+    <img src="care.jpg" alt="Hero Image">
+
 </section>
 
-<!-- Book Appointment Button -->
-<button class="appointment-btn" onclick="window.location.href='#appointment'">
-    Book Appointment
-</button>
+    <!-- Book Appointment Button -->
+    <button class="appointment-btn" onclick="window.location.href='#appointment'">
+        Book Appointment
+    </button>
+
+
 
     <!-- about us  -->
     <section id="about" class="about-us">
@@ -245,7 +242,7 @@
         <p>&copy; 2025 GyneCare. All rights reserved.</p>
     </footer>
 </section>
- <script src="javascript ">
+ <script src="script.js">
 
  </script>
 </body>

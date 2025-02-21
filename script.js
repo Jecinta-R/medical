@@ -48,3 +48,8 @@ document.querySelector('.appointment-form form').addEventListener('submit', func
     // Reset form
     this.reset();
 });
+
+// Navbar Toggle
+document.getElementById("menu-toggle").addEventListener("click", function () {
+    document.getElementById("nav-links").classList.toggle("show");
+});
